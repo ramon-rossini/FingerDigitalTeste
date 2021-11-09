@@ -1,0 +1,13 @@
+.card-acesso {
+    border: none;
+    width: 500px;
+    padding: 40px;
+}
+
+.fonte {
+    color: #17161a;
+}
+
+.link-dark {
+    cursor: pointer;
+}
