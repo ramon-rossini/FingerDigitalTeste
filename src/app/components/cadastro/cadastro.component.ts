@@ -77,7 +77,8 @@ export class CadastroComponent implements OnInit {
       this.cabecalho = 'Editar usuário';
       this.etiqueta = 'Atualizar seu nome, e-mail ou senha'
       this.botao = 'Editar';
-      this.caminho = '/lista'
+      this.caminho = '/lista';
+      this.retorno = 'Voltar a lista de usuários'
       this._usuarioService.getUsuario(this.id).subscribe(data => {
         this.cadastroForm.setValue({
           name: data.name,

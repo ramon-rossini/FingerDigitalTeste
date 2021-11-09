@@ -10,7 +10,7 @@
                     <div class="my-3 ">
                         <label class="form-label fonte" for="inputNome">Seu nome</label>
                         <input class="form-control shadow" type="text" id="inputNome" formControlName="name">
-                        <div *ngIf="cadastroForm.controls['nome']?.dirty && cadastroForm?.hasError('required','nome')">
+                        <div *ngIf="cadastroForm.controls['name']?.dirty && cadastroForm?.hasError('required','name')">
                             <span class="text-danger">*Nome é obrigatório</span>
                         </div>
                     </div>
