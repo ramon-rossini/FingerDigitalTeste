@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card card-lista position-absolute top-50 start-50 translate-middle">
+                <div class="card-body text-center">
+                    <span class="titulos">USUÁRIOS CADASTRADOS</span>
+                    <button class="btn btn-success float-end" routerLink="/cadastro">NOVO</button>
+                    <table class="table table-striped mt-4" *ngIf="lista.length > 0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Senha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let usuario of lista">
+                                <th>{{usuario.name}}</th>
+                                <td>{{usuario.email}}</td>
+                                <td>{{usuario.senha}}</td>
+                                <td>
+                                <i class="fas fa-edit text-primary" [routerLink]="['/editar', usuario._id]"></i>
+                                <i class="fas fa-trash text-danger" (click)="excluirUsuario(usuario._id)"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5 *ngIf="lista.length == 0">Não há usuários para mostrar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

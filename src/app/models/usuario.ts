@@ -1,13 +1,13 @@
 // Modelo com a classe Usuario para o armazenamento e manipulação dos dados
 
 export class Usuario {
-    id?: number;
-    nome: string;
+    _id?: number;
+    name: string;
     email: string;
     senha: string;
 
-    constructor(nome: string, email: string, senha: string) {
-        this.nome = nome;
+    constructor(name: string, email: string, senha: string) {
+        this.name = name;
         this.email = email;
         this.senha = senha;
     }

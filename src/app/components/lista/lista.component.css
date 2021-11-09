@@ -1,0 +1,15 @@
+.card-lista {
+    border: none;
+
+    padding: 40px;
+}
+
+.fas {
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.titulos {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
